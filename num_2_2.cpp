@@ -1,24 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include "lab04.hpp"
 
 using namespace std;
 
 pair<float, float> minMax(const vector<float>&vec);
-
-template<class T>
-vector<T> generate_random_vector(size_t num, T min = -100, T max = 100)
-{
-        random_device rd;
-        mt19937 e2(rd());
-        uniform_real_distribution<> dist(-100, 100);
-
-        auto lambda = [&e2, &dist] () -> T { return dist(e2); };
-
-        vector<T> result(10);
-        generate_n(result.begin(), num, lambda);
-        return result;
-}
 
 pair<float, float> minMax(const vector<float>&vec)
 {
@@ -34,11 +21,8 @@ pair<float, float> minMax(const vector<float>&vec)
 int main() {
     vector<float> vec = generate_random_vector<float>(10, -100, 100);
     
-    for(int i = 0; i < vec.size(); ++i) // начальные значения
-    {
-        cout << i+1 << ": " << vec[i]<< endl;
-    }
-    cout << '\n' << '\n';
+    foo(vec); // начальные значения
+    cout << '\n';
     
     pair<float, float> value = minMax(vec);
     
