@@ -5,8 +5,6 @@
 
 using namespace std;
 
-bool remove_first_negative_elements(const vector<int>&vec, int& removed_element);
-
 bool remove_first_negative_elements(vector<int>&vec, int& removed_element)
 {
     int count = 0;
