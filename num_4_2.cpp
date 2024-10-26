@@ -3,10 +3,7 @@
 #include <random>
 #include "lab04.hpp"
 
-
 using namespace std;
-
-void sort(vector<float>&vec);
 
 void sort(vector<float>&vec){
     float cur;
@@ -35,4 +32,3 @@ int main() {
     
     return 0;
 }
-
