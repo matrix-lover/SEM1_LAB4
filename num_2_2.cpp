@@ -5,8 +5,6 @@
 
 using namespace std;
 
-pair<float, float> minMax(const vector<float>&vec);
-
 pair<float, float> minMax(const vector<float>&vec)
 {
     pair<float, float> value (vec[0], vec[0]);
