@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "vector"
+#include "lab04.cpp"
 
 using namespace std;
 
