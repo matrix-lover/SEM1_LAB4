@@ -27,3 +27,4 @@ vector<T2> generate_random_vector(size_t num, T2 min = -100, T2 max = 100)
 
 float mean(const vector<float>&vec);
 pair<float, float> minMax(const vector<float>&vec);
+float argMax(const vector<float>&vec);
