@@ -1,12 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <random>
-
+#include "lab04.hpp"
 
 using namespace std;
-
-void sort(vector<float>&vec);
-
 
 void sort(vector<float>&vec){
     float cur;
@@ -35,10 +32,6 @@ int main()
     
     sort(vec);
     
-    for(int i = 0; i < vec.size(); ++i) // конечные значения
-    {
-        cout << i + 1 << ": " << vec [i]<< endl;
-    }
-    
+    foo(vec); // конечные значения
     return 0;
 }
