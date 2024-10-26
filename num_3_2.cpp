@@ -20,19 +20,22 @@ vector<T> generate_random_vector(size_t num, T min = -100, T max = 100)
         return result;
 }
 
-float argMax(const vector<float>&vec)
+int argMax(const vector<int>&vec)
 {
-    float max = 0;
+    int max = 0;
     max = vec[0];
     for (int i = 0; i < vec.size(); ++i)
     {
-        if (vec[i] > max) {max = i;}
+        if (vec[i] > max)
+        {
+            max = i;
+        }
     }
     return max;
 }
 
 int main() {
-    vector<float> vec = generate_random_vector<float>(10, -100, 100);
+    vector<int> vec = generate_random_vector<int>(10, -100, 100);
 
     for(int i = 0; i < vec.size(); ++i) // начальные значения
     {
@@ -40,9 +43,11 @@ int main() {
     }
     cout << '\n';
     
+    int index = argMax(vec);
+    
     if (vec.size() > 0)
     {
-        cout << argMax(vec) << endl;
+        cout << index << endl;
     }
     else {cout << -1 << endl;}
     return 0;
