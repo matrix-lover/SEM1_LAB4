@@ -3,8 +3,6 @@
 
 using namespace std;
 
-float mean(const vector<float>&vec);
-
 float mean(const vector<float>&vec)
 {
     float sum = 0;
