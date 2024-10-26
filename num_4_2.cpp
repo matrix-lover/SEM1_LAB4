@@ -43,7 +43,7 @@ int main() {
     
     for(int i = 0; i < vec.size(); ++i) // начальные значения
     {
-        cout << i << ": " << vec [i]<< endl;
+        cout << i + 1<< ": " << vec [i]<< endl;
     }
     cout << '\n' << '\n';
     
@@ -51,7 +51,7 @@ int main() {
     
     for(int i = 0; i < vec.size(); ++i) // конечные значения
     {
-        cout << i << ": " << vec [i]<< endl;
+        cout << i + 1<< ": " << vec [i]<< endl;
     }
     
     return 0;
