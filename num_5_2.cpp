@@ -42,7 +42,7 @@ int main()
     }
     else cout << "false" << '\n' << "removed element: " << removed_element << endl;
     
-    foo(vec); // конечное значение;
+    foo(vec); // конечные значения;
     
     return 0;
 }
