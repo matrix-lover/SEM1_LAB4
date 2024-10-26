@@ -4,11 +4,6 @@
 
 using namespace std;
 
-float argMax(const vector<float>&vec);
-
-template< class T > class numeric_limits;
-
-
 int argMax(const vector<int>&vec)
 {
     int max = 0;
