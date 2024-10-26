@@ -23,15 +23,17 @@ vector<T> generate_random_vector(size_t num, T min = -100, T max = 100)
 int argMax(const vector<int>&vec)
 {
     int max = 0;
+    int max_index = 0;
     max = vec[0];
     for (int i = 0; i < vec.size(); ++i)
     {
         if (vec[i] > max)
         {
-            max = i;
+            max = vec[i];
+            max_index = i;
         }
     }
-    return max;
+    return max_index;
 }
 
 int main() {
@@ -43,12 +45,12 @@ int main() {
     }
     cout << '\n';
     
-    int index = argMax(vec);
-    
     if (vec.size() > 0)
     {
-        cout << index << endl;
+        cout << "Индекс максимального: " << argMax(vec)+1 << endl;
     }
     else {cout << -1 << endl;}
     return 0;
 }
+
+
