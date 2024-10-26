@@ -5,8 +5,6 @@
 
 using namespace std;
 
-float argMax(const vector<float>&vec);
-
 int argMax(const vector<int>&vec)
 {
     int max = 0;
