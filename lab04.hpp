@@ -6,5 +6,5 @@ void foo(const vector<int>&vec)
     {
         cout << i+1 << ": " << vec[i]<< endl;
     }
-    cout << '\n' << '\n';
+    cout << '\n';
 }
