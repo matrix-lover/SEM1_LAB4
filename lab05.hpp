@@ -31,3 +31,4 @@ float argMax(const vector<float>&vec);
 void sort(vector<float>&vec);
 bool remove_first_negative_elements(vector<int>&vec, int& removed_element);
 string replace(string&str, string&old, string&new_string);
+vector<string> split(string&str, string&sep);
