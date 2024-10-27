@@ -1,3 +1,6 @@
+#include <iostream>
+#include <random>
+#include <vector>
 using namespace std;
 
 
@@ -32,3 +35,4 @@ void sort(vector<float>&vec);
 bool remove_first_negative_elements(vector<int>&vec, int& removed_element);
 string replace(string&str, string&old, string&new_string);
 vector<string> split(string&str, string&sep);
+string join(const vector<string>&arr, const string&sep)
