@@ -29,4 +29,5 @@ float mean(const vector<float>&vec);
 pair<float, float> minMax(const vector<float>&vec);
 float argMax(const vector<float>&vec);
 void sort(vector<float>&vec);
-bool remove_first_negative_elements(const vector<int>&vec, int& removed_element);
+bool remove_first_negative_elements(vector<int>&vec, int& removed_element);
+string replace(string&str, string&old, string&new_string);
