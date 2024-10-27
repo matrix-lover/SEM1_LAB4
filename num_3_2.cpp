@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <random>
-#include "lab04.hpp"
+#include "lab05.hpp"
 
 using namespace std;
 
